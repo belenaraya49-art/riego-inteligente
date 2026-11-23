@@ -1,0 +1,19 @@
+FUENTES.md
+# Fuentes del proyecto Riego Inteligente
+
+## Librerías
+
+- `WiFi.h` y `WebServer.h` (Arduino-ESP32): conexión a la red local y funcionamiento de la página del prototipo.
+- `OneWire.h` y `DallasTemperature.h`: comunicación con el sensor DS18B20 y lectura de la temperatura del suelo.
+- `DHT.h`: lectura de temperatura y humedad ambiental con el DHT11.
+- `LittleFS.h` (Arduino-ESP32): almacenamiento de las mediciones en un CSV descargable desde la página. La persistencia del historial queda pendiente de verificar en la placa.
+
+## Código externo adaptado
+
+Si se usaron fragmentos de tutoriales o repositorios, agregar aquí el enlace, el fragmento utilizado y qué se adaptó para el prototipo.
+
+## Uso de inteligencia artificial
+
+Usé ChatGPT como apoyo para generar y depurar el código del ESP32. El código se ajustó al cableado, los sensores y la calibración del prototipo. Comprobé las lecturas de los sensores, su visualización en la página y la conmutación del relé.
+
+También le pedí a ChatGPT que integrara un historial descargable y me entregara el código completo. El cambio agrega una fila al CSV por cada nueva medición y un enlace para descargarlo desde la sección Diagnóstico.
